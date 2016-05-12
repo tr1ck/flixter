@@ -61,7 +61,7 @@
 .field_with_errors {
   color: #ff3333;
   background-color: #FFEEEE;
-  border-radius: 3px;
+  border-radiues: 3px;
   padding: 8px;
   margin: 10px;
 }
@@ -94,44 +94,6 @@
   clear:both;
 }
 
-.section-li {
-  border: 1px solid;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  padding: 20px;
-  margin: 20px;
-}
-
-.lessons li {
-  background-color: black;
-  color: white;
-  margin: 10px;
-  font-family: 'Helvetica Neue', Helvetica;
-  font-weight: 100;
-  padding: 8px;
-  margin: 15px;
-}
-
-.lessons li b{
-  font-size: 25px;
-  font-weight: 100;
-}
-
-.lesson li p{
-  margin: 0px;
-}
-
-ul .header{
-  font-size: 25px;
-}
-
-ul .header .glyphicon {
-  font-size: 20px;
-}
-
-ul {
-  list-style-type: none;
-}
-
 h1, h2, h3, h4, h5, h6, .navbar, .alert {
   margin: 0;
 }
@@ -139,4 +101,16 @@ h1, h2, h3, h4, h5, h6, .navbar, .alert {
 body {
   background: url('brushed.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}  
+  
+.course-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

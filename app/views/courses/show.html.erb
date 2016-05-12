@@ -1,8 +1,8 @@
 <br />
 
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-  <h1><%= @course.title %></h1>
-  <%= image_tag @course.image, class: 'img-responsive' %>
+  <h1 class='text-center'><%= @course.title %></h1>
+  <%= image_tag @course.image, class: 'course-image img-responsive' %>
   <br />
   <div class="col-sm-4 col-xs-12 text-center">
     <span class="label label-default">
@@ -24,8 +24,6 @@
       <% if @course.free? %>
         <%= link_to 'Enroll', course_enrollments_path(@course), class:"btn btn-primary", method: :post %>
       <% else %>
-        <br />
-        <br />
         <%= form_tag course_enrollments_path(@course) do %>
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -45,7 +43,7 @@
     <% @course.sections.rank(:row_order).each do |section| %>
       <br /><br />
       <div class="section">
-        <h3>
+        <h3 class="text-center">
           <%= section.title %>
         </h3>
         <% section.lessons.rank(:row_order).each do |lesson| %>
